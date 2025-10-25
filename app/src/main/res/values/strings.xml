@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Resident Isle</string>
+    <string name="app_slogan">Your Voice, Your Community</string>
+    <string name="hackathon_category"><![CDATA[Infrastructure & Services]]></string>
 </resources>

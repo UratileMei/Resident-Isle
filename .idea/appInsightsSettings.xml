@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.coderisle.residentisle" />
+                  <option name="mobileSdkAppId" value="1:423458451609:android:60c9005980dc05cac54808" />
+                  <option name="projectId" value="resident-isle" />
+                  <option name="projectNumber" value="423458451609" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

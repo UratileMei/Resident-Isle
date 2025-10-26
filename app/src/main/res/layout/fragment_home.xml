@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollHome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="#FFFFFF">
+    android:clipToPadding="false"
+    android:background="#FFFFFF"
+    android:paddingBottom="100dp"> <!-- Extra padding for bottom nav -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -73,6 +77,7 @@
             android:columnOrderPreserved="false"
             android:alignmentMode="alignBounds">
 
+            <!-- Report Issue Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardReportIssue"
                 android:layout_width="0dp"
@@ -106,6 +111,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Track Issues Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardTrackIssues"
                 android:layout_width="0dp"
@@ -139,6 +145,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Announcements Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardAnnouncements"
                 android:layout_width="0dp"
@@ -172,6 +179,7 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
+            <!-- Directory Card -->
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cardDirectory"
                 android:layout_width="0dp"
@@ -214,6 +222,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="#212121"
+            android:layout_marginTop="16dp"
             android:layout_marginBottom="12dp" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -222,6 +231,7 @@
             android:layout_height="wrap_content"
             android:nestedScrollingEnabled="false" />
 
+        <!-- Empty State -->
         <LinearLayout
             android:id="@+id/llEmptyState"
             android:layout_width="match_parent"
@@ -247,4 +257,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</ScrollView>
+</androidx.core.widget.NestedScrollView>

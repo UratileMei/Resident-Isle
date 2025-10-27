@@ -39,9 +39,16 @@ public class MainActivity extends AppCompatActivity {
         topAppBar = findViewById(R.id.topAppBar);
 
         topAppBar.setNavigationOnClickListener(v -> drawerLayout.openDrawer(navigationView));
-// Load home fragment by default
+
+        String userRole = getIntent().getStringExtra("userRole");
+
+        // Load fragment based on user role
         if (savedInstanceState == null) {
-            loadFragment(new AdminDashboardFragment());
+            if ("admin".equalsIgnoreCase(userRole)) {
+                loadFragment(new AdminDashboardFragment());
+            } else {
+                loadFragment(new HomeFragment());
+            }
             bottomNavigation.setSelectedItemId(R.id.nav_home);
         }
 

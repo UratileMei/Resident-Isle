@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         topAppBar.setNavigationOnClickListener(v -> drawerLayout.openDrawer(navigationView));
 // Load home fragment by default
         if (savedInstanceState == null) {
-            loadFragment(new HomeFragment());
+            loadFragment(new AdminDashboardFragment());
             bottomNavigation.setSelectedItemId(R.id.nav_home);
         }
 
